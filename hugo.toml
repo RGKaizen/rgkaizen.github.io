@@ -1,0 +1,37 @@
+baseURL = 'https://rgkaizen.github.io/'
+locale = 'en-us'
+title = 'RGKaizen Devlog'
+theme = 'PaperMod'
+copyright = '© 2026 Rodrigo. Code samples MIT-licensed.'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = 'Building Okonomiyaki, a pixel-art RPG, with a team of AI agents.'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = false
+
+  [params.homeInfoParams]
+    Title = 'RGKaizen Devlog'
+    Content = 'Notes from building Okonomiyaki, a pixel-art RPG made in Godot with a team of AI agents.'
+
+[menu]
+  [[menu.main]]
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    name = 'Archive'
+    url = '/archives/'
+    weight = 20
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+# Allow raw HTML in Markdown posts (galleries, video, charts).
+[markup.goldmark.renderer]
+  unsafe = true
